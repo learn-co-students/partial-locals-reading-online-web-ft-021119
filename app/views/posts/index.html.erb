@@ -1,7 +1,7 @@
-<%= @posts.each do |post| %>
-  <% binding.pry %>
-  <%= render 'authors/author', locals: {author: post.author} %>
+<% @posts.each do |post| %>
+  <%= render 'authors/author', author: post.author%>
 
   <%= post.title %>
   <%= post.content %>
+
 <% end %>
